@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Variables are powerful tools in bash that are used to store different types of data that can be used and modified throughout the script.
+# Bash variables are loosely-typed meaning that they can hold any type of data.
+
 num1=32
 num2=52 
 	
