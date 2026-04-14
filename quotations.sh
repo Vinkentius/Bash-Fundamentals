@@ -6,6 +6,8 @@
 
 var=100
 
-echo '$var' 
+echo '$var'  # This line outputs whatever is inside without caring about variable expansion.
+ # In this case it will output $var, and not the actual value of the variable.
 
-echo "$var"
+echo "$var" # This line outputs whatever is inside, but it cares about variables.
+# in this case it will output 100, the actual value of the variable.
