@@ -2,7 +2,9 @@
 
 # There a lot of different types of brackets you can use in Bash scripting. 
 
-# Single Parentheses
+
+# 																				Single Parentheses
+
 
 # Single parentheses will run the commands inside in a subshell, and any variables declared will disappear after.
 
@@ -12,7 +14,9 @@ num=50
 
 echo $num 			# This will run in the regular shell and output the original value of the variable (50).
 
-# Double Parentheses
+
+# 																				Double Parentheses
+
 
 # Double parentheses allow you to do integer arithmetic. You can perform any simple arithmetic operation inside of them including modulo.
 
@@ -24,3 +28,8 @@ echo $var
 
 (( var += hello ))		# The output of this won't change compared to last time, because inside double parentheses strings don't have an integer value.
 echo $var				# Output will be 16.
+
+
+#																			   Single Square Brackets
+
+# Single square brackets check the statements inside for if they are true or false. Strings with 0 length are considered false, strings with length 1 or more are true.
