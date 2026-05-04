@@ -30,10 +30,14 @@ echo $var
 echo $var				# Output will be 16.
 
 
-#																			   Single Square Brackets
+#																			   Square Brackets
 
-# Single square brackets check the statements inside for if they are true or false. Strings with 0 length are considered false, strings with length 1 or more are considered true.
+# Square brackets check the statements inside for if they are true or false. Strings with 0 length are considered false, strings with length 1 or more are considered true.
 
 if [ -e brackets.sh ]; then
 	echo "Brackets file exists!"
 fi
+
+# The -e flag checks if the file exists, and since the file exists, the code inside the if statement will run. 
+
+# Outpouts:  Brackets file exists!
