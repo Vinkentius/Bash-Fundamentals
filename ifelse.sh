@@ -30,3 +30,11 @@ elif [ $num -eq 3 ]; then
 else 
 	echo "You didn't pick between 1 and 3 :( "
 fi
+
+# Firstly, I asked the user for a number between 1 and 3. The if statement takes the number they inputted and turned it into words.
+# This shows that it is possible and some times very useful to use elif more than once, instead of having to keep writing if statements.
+
+# If the user inputted 1, then the code will output 'One'
+# If the user inputted 2, then the code will output 'Two'
+# If the user inputted 3, then the code will output 'Three'
+# If the user inputted any other integer value, then the code will output 'You didn't pick between 1 and 3 :('
