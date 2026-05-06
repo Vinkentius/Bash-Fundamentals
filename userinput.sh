@@ -14,4 +14,6 @@
 	# Example:
 	read -t 3 -p "Answer quickly!! What's 9 + 10: " answer 
 	echo "$answer"
-	
+	# This will print "Answer quickly!! What's 9 + 10: " and then prompt for an answer. It will then save the answer and echo it back to the user
+	# The '-t 3' at the beginning of the command means that the user will only have 3 seconds to respond before it stops accepting any inputs.
+	# The '-p' at the beginning of the command means that it will print the string in the quotations before asking for the user input.
