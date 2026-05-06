@@ -9,4 +9,7 @@ num=5
 
 if [ $num == 5 ]; then
 	echo "The number is 5!"
-fi 
+fi
+
+# That statement is a conditionl, because it will only run if the variable num is equal to 5.
+# In that case, it will output 'The number is 5!'
