@@ -13,3 +13,13 @@ fi
 
 # That statement is a conditionl, because it will only run if the variable num is equal to 5.
 # In that case, it will output 'The number is 5!'
+
+case $num in
+	5)
+		echo "In this CASE, the number is 5."
+	;;
+	*)
+		echo "This code will run if every other condition is false!"
+	;;
+esac
+
