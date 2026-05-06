@@ -21,3 +21,6 @@
 # -n  Returns after a specific number of characters instead of waiting for the user to press enter.
 	# Example:
 	read -n 2 -p "Enter a 3 digit number: " num
+	# This will print print "Enter a 3 digit number: " and then prompt the user for an answer.
+	# The '-n 2' at the beginning of the command means that the user will only be able to enter 2 characters before the read command enters it for them.
+	# This means that the user will never be able to enter a 3 digit number, because of the 2 there. If you wanted the user to be able to enter a 3 digit number, change out the 2 for a 3.
