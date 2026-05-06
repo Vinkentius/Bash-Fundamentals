@@ -23,3 +23,8 @@ case $num in
 	;;
 esac
 
+# The way a case statement works is by matching the variable  with the "patterns" (the things behind the brackets), and if they match then it will run the code below the pattern.
+# This is a conditional because it checks for the condition of the variable, and runs code based off of that condition.
+
+# That code will output "In this CASE, the number is 5"
+
