@@ -31,3 +31,10 @@
 		else
 			echo "False"
 		fi
+
+
+		if [[ $var1 || $var2 == 0 ]]; then
+			echo "True"
+		else
+			echo "False"
+		fi
