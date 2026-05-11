@@ -44,8 +44,14 @@
 
 		rm examplefile.txt || echo "Failed to delete file." # Because the first command failed (There is no file named that), the echo statement will run.
 
-	# '!' is used to check if a statement is false.
+	# '!' is used to check if a statement is false. Also known as the NOT operator. Returns true only if the condition is false, and returns false only if the condition is true.
 		if [[ $var1 != 0 ]]; then
+			echo "True"
+		else
+			echo "False"
+		fi
+
+		if [[ $var3 != 0 ]]; then
 			echo "True"
 		else
 			echo "False"
