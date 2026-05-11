@@ -38,3 +38,8 @@
 		else
 			echo "False"
 		fi
+
+	# '||' is known as the double pipe because it acts like a pipe, but the second command will only run if the first command fails (returns a non-zero exit status)
+	# For example
+
+		rm examplefile.txt || echo "Failed to delete file." # Because the first command failed (There is no file named that), the echo statement will run.
