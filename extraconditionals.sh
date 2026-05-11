@@ -26,14 +26,14 @@
 	
 	# '||' is used as the OR operator in conditionals.
 
-		if [[ $var1 == 1 || $var3 == 1 ]]; then
+		if [[ $var1 == 1 || $var3 == 1 ]]; then # Since var1 is equal to 1, but var3 isn't, the code still runs. Only one of the conditions have to be true when using ||
 			echo "True"
 		else
 			echo "False"
 		fi
 
 
-		if [[ $var1 == 0 || $var2 == 0 ]]; then
+		if [[ $var1 == 0 || $var2 == 0 ]]; then # Since var1 and var2 are both not equal to 0, the code returns false.
 			echo "True"
 		else
 			echo "False"
