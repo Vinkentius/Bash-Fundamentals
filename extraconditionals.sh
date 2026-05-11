@@ -43,3 +43,10 @@
 	# For example
 
 		rm examplefile.txt || echo "Failed to delete file." # Because the first command failed (There is no file named that), the echo statement will run.
+
+	# '!' is used to check if a statement is false.
+		if [[ $var1 != 0 ]]; then
+			echo "True"
+		else
+			echo "False"
+		fi
