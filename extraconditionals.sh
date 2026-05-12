@@ -56,3 +56,15 @@
 		else					# This statement will return false because var3 IS equal to 0, but because we used the NOT operator, that returns false.
 			echo "False"
 		fi
+
+	# Common issues and mistakes
+
+		# In between each operator there has to be the ENTIRE condition that you're trying to evaluate.
+
+		# [[ $var1 && $var2 == 1 ]]   INCORRECT
+		# [[ $var1 == 1 && $var2 == 1 ]] CORRECT
+
+		# You can only use one operator at a time
+
+		# [[ $var1 == 1 &&|| $var2 == 1 ]] INCORRECT
+		# [[ $var1 == 1 && $var2 == 1 ]] OR [[ $var1 == 1 || $var2 == 1 ]]  CORRECT
