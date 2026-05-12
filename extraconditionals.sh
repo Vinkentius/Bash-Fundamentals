@@ -47,12 +47,12 @@
 	# '!' is used to check if a statement is false. Also known as the NOT operator. Returns true only if the condition is false, and returns false only if the condition is true.
 		if [[ $var1 != 0 ]]; then
 			echo "True"
-		else
-			echo "False"
+		else					# This statement will return true because var1 ISN'T equal to 0.
+			echo "False"		
 		fi
 
 		if [[ $var3 != 0 ]]; then
 			echo "True"
-		else
+		else					# This statement will return false because var3 IS equal to 0, but because we used the NOT operator, that returns false.
 			echo "False"
 		fi
