@@ -34,4 +34,11 @@ esac
 
 # Because 5 is the only pattern that matches the variable, the code outputs : 3 + 2 = 5
 
-# case statements should only be used when you are comparing one variable or expression against three or more patterns. For two conditions, boolean logic, or arithmetic it's better to use an if statement.
+# case statements should only be used when you are comparing one variable or expression against three or more patterns. 
+# For two conditions, boolean logic, or arithmetic it's better to use an if statement.
+
+# Common issues and mistakes:
+
+# After each clause you must use either ';;', ';&', or ';;&'. 
+# use ;; for standard behaviour. Use ;& to always run the next clause no matter the output. Use ;;& to retest the remaining clauses, even after a previous one has already returned true.
+
