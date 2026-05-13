@@ -31,3 +31,7 @@ case "$var2" in
 		echo "Nothing else matched"
 		;;
 esac
+
+# Because 5 is the only pattern that matches the variable, the code outputs : 3 + 2 = 5
+
+# case statements should only be used when you are comparing one variable or expression against three or more patterns. For two conditions, boolean logic, or arithmetic it's better to use an if statement.
