@@ -7,3 +7,10 @@
 array=("value1" "value2" "value3")
 
 # Seperate different values in an array with SPACES NOT COMMAS
+
+# To access information in an array, you must do the following:
+echo ${array[0]}
+
+# Use curly brackets to specify that you're talking about an array and not a variable
+# Use square brackets to specify the index of the element you're talking about in the array
+# ( This code will output: value1 )
