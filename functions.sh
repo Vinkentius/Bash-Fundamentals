@@ -7,3 +7,9 @@
 newfunc() {
 	echo "This is my first function!"
 }
+
+# To call a function (Use the commands stored inside), then you just use its name.
+
+newfunc
+
+# Output: This is my first function
