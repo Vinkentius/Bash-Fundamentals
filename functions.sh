@@ -13,3 +13,13 @@ newfunc() {
 newfunc
 
 # Output: This is my first function
+
+# Functions can take in parameters. Use $1 to call the first parameter, $2 for the second and so on
+
+param() {
+	echo "Your name is $1"
+}
+
+param Coder
+
+# Output: Your name is Coder
