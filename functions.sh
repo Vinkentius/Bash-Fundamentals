@@ -36,3 +36,11 @@ localvar() {
 
 echo "$var"
 localvar
+
+# Common issues and mistakes
+
+# Accidentally using global variables when local variables would be better.
+# It's important to keep in mind that variables in functions are always global unless declared local
+
+# Forgetting to quote variables.
+# Quotes stop your variables from being misinterpreted by the shell.
