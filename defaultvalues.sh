@@ -43,4 +43,12 @@ echo "${var:-default}"
 	unset z
 
 	echo "${z:?Z is empty}" # This will output "Z is empty"
+
 # Use ':+' to use a default value if the variable has a value, if it doesn't have a value then use nothing
+	USER=1
+
+	echo "${USER:+user is logged in}" # Because our USER variable has a value set to it in this case, it will output "user is logged in"
+
+	unset USER
+
+	echo "${USER:+user is logged in}" # However, now that our USER variable isn't set this won't output anything into the terminal.
