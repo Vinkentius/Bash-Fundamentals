@@ -52,3 +52,13 @@ echo "${var:-default}"
 	unset USER
 
 	echo "${USER:+user is logged in}" # However, now that our USER variable isn't set this won't output anything into the terminal.
+
+# Common issues and mistakes
+	# Unset and empty are two DIFFERENT things.
+	
+	f=""	# Here, f is empty, but it isn't unset.
+	unset f # Now f is unset, but it isn't empty.
+
+	# Distinguishing between these 2 states of a variable is very important when using default values. (:- vs -)
+	# :- is for unset OR empty variables
+	# - is only for unset variables
