@@ -36,4 +36,11 @@ echo "${var:-default}"
 	echo "$y" # This will now output 'default' instead of '1'
 
 # Use ':?' to output an error message if a variable is unset or empty.
+	# This one is most useful for important variables that need to output an error message to let the user know that something is wrong.
+
+	z=5
+
+	unset z
+
+	echo "${z:?Z is empty}" # This will output "Z is empty"
 # Use ':+' to use a default value if the variable has a value, if it doesn't have a value then use nothing
