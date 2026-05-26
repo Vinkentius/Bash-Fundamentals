@@ -5,6 +5,15 @@
 
 # Syntax:
 
-# while [condition]; do
+# while [ condition ]; do
 #	commands
 # done
+
+# A common example of while loops is by using them to count.
+
+count=1
+
+while [[ $count -le 5 ]]; do
+	echo "Count = $count"
+	count=$((count + 1))
+done
