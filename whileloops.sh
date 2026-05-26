@@ -41,3 +41,20 @@ done
 # 			I'm still here
 # 			I'm still here
 # And so on, until the user ends the process.
+
+
+# If we want a loop to end while the condition is still true, then we use the break command.
+
+while true; do
+	read -p "Enter password: " pwd
+
+	if [[ $pwd == "vinkenator" ]]; then
+		echo "DING DING DING"
+		break
+	fi
+
+	echo "Nope. Try again"
+done
+
+# This will ask the user for an input, in this example a password, and if the password is wrong then the while loop will keep requesting the password from the user.
+# But once the user gets the password right, the while loop will break and the loop will not start the next iteration even though it's condition is still true.
