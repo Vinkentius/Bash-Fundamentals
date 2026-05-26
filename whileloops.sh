@@ -58,3 +58,10 @@ done
 
 # This will ask the user for an input, in this example a password, and if the password is wrong then the while loop will keep requesting the password from the user.
 # But once the user gets the password right, the while loop will break and the loop will not start the next iteration even though it's condition is still true.
+
+# Common issues and mistakes
+
+# You can't forget spaces with conditions
+# [x -lt 5]	Incorrect
+# [ x -lt 5 ] Correct
+
