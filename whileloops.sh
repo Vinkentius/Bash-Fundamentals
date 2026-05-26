@@ -17,3 +17,11 @@ while [[ $count -le 5 ]]; do
 	echo "Count = $count"
 	count=$((count + 1))
 done
+
+# This will keep loooping the echo statement, but every iteration of it will add 1 to $count.
+# Once $count is equal to 5, then the while loop will exit.
+# Outputs:  Count = 1
+# 			Count = 2
+# 			Count = 3
+#			Count = 4
+# 			Count = 5
