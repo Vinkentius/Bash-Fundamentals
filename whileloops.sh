@@ -25,3 +25,19 @@ done
 # 			Count = 3
 #			Count = 4
 # 			Count = 5
+
+# You can also use while loops to make a forever loop.
+# Exit with CRTL + C
+
+while true; do
+	echo "I'm still here"
+	sleep 1
+done
+
+# This will run no matter what, because the statement 'true' will always return as true.
+# sleep 1 just waits 1 second before the next iteration of the while loop.
+
+# Outputs:	I'm still here
+# 			I'm still here
+# 			I'm still here
+# And so on, until the user ends the process.
